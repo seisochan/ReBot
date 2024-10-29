@@ -154,12 +154,12 @@ module.exports = {
       }
       const channel = message.guild.channels.cache.get(textChannelID.live);
       await channel.send({
-        content: `Hai Halo~ ${mention} people ヾ(＾-＾)ノ \n${
+        content: `Hi ${mention} ~\n${
           args[0].toLowerCase() === 'live'
-            ? `Bakal ada Livestream mendatang lhoooo pada **${videoDateTime.format(
+            ? `Bakal ada livestream mendatang di tanggal **${videoDateTime.format(
                 timeFormat
               )} WIB!**\nDateng yaaa~ UwU`
-            : `Akan ada premiere lhooo~ pada **${videoDateTime.format(
+            : `Akan ada premiere di tanggal **${videoDateTime.format(
                 timeFormat
               )} WIB!**\nNonton bareng yuk~!`
         }`,
